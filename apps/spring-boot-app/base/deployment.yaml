@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: horlacloud/spring-boot-demo:20
+        image: horlacloud/spring-boot-mo:20
         ports:
         - containerPort: 8080
