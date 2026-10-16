@@ -5,7 +5,7 @@ metadata:
   labels:
     app: spring-boot-app
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: spring-boot-app
@@ -15,11 +15,7 @@ spec:
         app: spring-boot-app
     spec:
       containers:
-      - name: spring-boot-app
-<<<<<<< HEAD
-        image: horlacloud/spring-boot-demo:20
-=======
-        image: horlacloud/spring-boot-deo:1
->>>>>>> 971834b (test like a hacker to know if argocd will drift)
-        ports:
-        - containerPort: 8080
+        - name: spring-boot-app
+          image: horlacloud/spring-boot-demo:20
+          ports:
+            - containerPort: 8080
