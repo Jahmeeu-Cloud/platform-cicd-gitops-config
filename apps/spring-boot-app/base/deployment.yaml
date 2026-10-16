@@ -16,6 +16,10 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
+<<<<<<< HEAD
         image: horlacloud/spring-boot-demo:20
+=======
+        image: horlacloud/spring-boot-deo:1
+>>>>>>> 971834b (test like a hacker to know if argocd will drift)
         ports:
         - containerPort: 8080
